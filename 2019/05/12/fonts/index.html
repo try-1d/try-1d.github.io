@@ -5,15 +5,19 @@
   
 
   
-  <title>Archives | TinyShop</title>
+  <title>TinyShop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="@font-face {       font-family: font-sans;       font-family: Broadway;       src: url(Broadway.ttf);     }      h1 {       font-family: Broadway;     }          My First Heading    getData">
+<meta property="og:type" content="article">
 <meta property="og:title" content="TinyShop">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/05/12/fonts/index.html">
 <meta property="og:site_name" content="TinyShop">
+<meta property="og:description" content="@font-face {       font-family: font-sans;       font-family: Broadway;       src: url(Broadway.ttf);     }      h1 {       font-family: Broadway;     }          My First Heading    getData">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-12T17:18:54.539Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TinyShop">
+<meta name="twitter:description" content="@font-face {       font-family: font-sans;       font-family: Broadway;       src: url(Broadway.ttf);     }      h1 {       font-family: Broadway;     }          My First Heading    getData">
   
     <link rel="alternate" href="/atom.xml" title="TinyShop" type="application/atom+xml">
   
@@ -66,82 +70,116 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/12/fonts/" class="archive-article-date">
-  <time datetime="2019-05-12T17:18:54.539Z" itemprop="datePublished">May 12</time>
+        <section id="main"><article id="post-fonts" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/12/fonts/" class="article-date">
+  <time datetime="2019-05-12T17:18:54.539Z" itemprop="datePublished">2019-05-12</time>
 </a>
-      
-    </header>
+    
   </div>
-</article>
-  
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/05/11/hello-world/" class="archive-article-date">
-  <time datetime="2019-05-12T01:26:46.403Z" itemprop="datePublished">May 11</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/11/hello-world/">Hello World</a>
-    </h1>
-  
+        <html>
 
-    </header>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <style>
+    @font-face {
+      font-family: font-sans;
+      font-family: Broadway;
+      src: url(Broadway.ttf);
+    }
+
+    h1 {
+      font-family: Broadway;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My First Heading</h1>
+
+  <button type="button" onclick="getData()">getData</button>
+  <button type="button" onclick="putData()">putData</button>
+
+  <p>My first paragraph.</p>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+
+  <script>
+    function getData() {
+      var url = "http://tmp1234.com/t1.txt";
+      var data = "test data ";
+      console.log("call ajax get");
+      $.ajax({
+        url: url,
+        data: data,
+        success: success,
+        error: errorX,
+        dataType: 'text'
+      });
+      function success(rsp) {
+        alert("hi, success: " + rsp);
+        console.log(rsp);
+      }
+      function errorX(rsp) {
+        alert("hi, errorX: " + rsp);
+        console.log(rsp);
+      }
+    }
+
+    function putData() {
+      var url = "http://tmp1234.com/_php/savefile.php";
+      var data = {filename: "t2.txt", data: "test data from hexo"};
+      console.log("call ajax post");
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: data,
+        success: success,
+        error: errorX,
+        dataType: 'text'
+      });
+      function success(rsp) {
+        alert("hi, success: " + rsp);
+        console.log(rsp);
+      }
+      function errorX(rsp) {
+        alert("hi, errorX: " + rsp);
+        console.log(rsp);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/12/fonts/" data-id="cjvl7k4u90000afctu4ic4t09" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
-</article>
   
     
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/07/29/post-2/" class="archive-article-date">
-  <time datetime="2018-07-29T06:00:00.000Z" itemprop="datePublished">Jul 29</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/29/post-2/">blog -- 2nd post</a>
-    </h1>
   
+    <a href="/2019/05/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
-
 
 </section>
         
